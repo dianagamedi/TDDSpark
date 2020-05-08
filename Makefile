@@ -8,5 +8,5 @@ setup:
 
 test:
 	source env/bin/activate; \
-	SPARK_LOCAL_IP=127.0.0.1 PYTHONPATH=/artifacts:./artifacts/ python3 -m pytest ${target} -v
+	SPARK_LOCAL_IP=127.0.0.1 PYTHONPATH=/src:./src/ python3 -m pytest ${target} -v
 
